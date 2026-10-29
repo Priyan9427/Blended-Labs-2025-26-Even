@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: Priyan U
+* **Register Number**: 212224040254
+* **Date of Submission**: 29-10-2026
 
 ---
 
@@ -85,13 +85,15 @@ Create a simple HTML page and verify that it can be accessed from a web browser 
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
+1\. Created a VPC with the CIDR block `10.0.0.0/16` to provide an isolated network for AWS resources.
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+2\. Created a public subnet with the CIDR block `10.0.1.0/24` and enabled automatic public IPv4 address assignment.
+
+3\. Created and attached an Internet Gateway to the VPC, then configured a route table with the default route `0.0.0.0/0` to enable internet connectivity.
+
+4\. Created a security group allowing SSH (port 22) and HTTP (port 80), then launched an EC2 instance using Amazon Linux 2 in the public subnet.
+
+5\. Installed and started the Apache web server on the EC2 instance, created a simple HTML page, and accessed it through the instance's public IP address using a web browser.
 
 ---
 
@@ -99,19 +101,23 @@ Create a simple HTML page and verify that it can be accessed from a web browser 
 
 ### Screenshot 1: VPC and Subnet Details
 
-(Insert Screenshot Here)
+<img width="1918" height="1095" alt="Screenshot 2026-10-29 155754" src="https://github.com/user-attachments/assets/833b9950-92c6-4fe2-bae5-0ccba6dbb68c" />
+
+<img width="1918" height="1090" alt="Screenshot 2026-10-29 155901" src="https://github.com/user-attachments/assets/6edb4e2f-cdbf-44a9-b088-5c1a3ec9f373" />
 
 ---
 
 ### Screenshot 2: EC2 Instance Running
 
-(Insert Screenshot Here)
+
+<img width="1918" height="1088" alt="Screenshot 2026-10-29 160513" src="https://github.com/user-attachments/assets/b5092a8a-3abe-4aed-b011-ec85c0bee067" />
+
 
 ---
 
 ### Screenshot 3: Web Server Output in Browser
 
-(Insert Screenshot Here)
+<img width="1600" height="809" alt="555779211-f0fa2eef-f9e2-46c0-a73a-043c4c44931a" src="https://github.com/user-attachments/assets/73480fca-6f66-4e51-835e-3c87ec5aaef2" />
 
 ---
 
